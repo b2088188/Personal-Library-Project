@@ -1,0 +1,27 @@
+.search-results {
+    width: 40rem;
+    min-height: 90%;
+    background-color: $color-white;
+    position: relative;
+}
+
+.pagination{
+    bottom: 8rem;
+    width: 100%;
+    min-height: 5rem;
+   
+    &__btn--prev{
+        position: absolute;
+        left: 1rem;
+    }
+    &__btn--next{
+        position: absolute;
+        right: 1rem;
+    }
+
+    &__icon{
+            width: 20%;
+        height: 60%;
+         fill: $color-tiffany-default;
+    }
+}

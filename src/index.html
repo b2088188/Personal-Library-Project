@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <title>Personal Library Store</title>
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <form class="search">
+                <input type="text" class="search__field" placeholder="Search over 1,000 books...">
+                <button class="btn search__btn">
+                    <svg class="search__icon">
+                        <use href="./img/icons.svg#icon-search"></use>
+                    </svg>
+                    <span>Search</span>
+                </button>
+            </form>
+            <nav class="nav">
+                <ul class="nav__list">                    
+                    <li class="nav__item">
+                        <button class="nav__btn nav__btn--bookmarks">
+                            <svg class="nav__icon">
+                                <use href="./img/icons.svg#icon-bookmark"></use>
+                            </svg>
+                            <span>Bookmarks</span>
+                        </button>
+                        <div class="bookmarks">
+                            <ul class="bookmarks__list">
+                                <div class="message">
+                                   <div>
+                                     <svg>
+                                      <use href="./img/icons.svg#icon-smile"></use>
+                                    </svg>
+                                   </div>
+                                    <p>
+                                          No bookmarks yet. Find a facinating book and bookmark it :)
+                                    </p>
+                                </div>  
+                                <!-- <li class="preview">
+                    <a class="preview__link" href="#23456">
+                      <figure class="preview__fig">
+                        <img src="src/img/test-1.jpg" alt="Test" />
+                      </figure>
+                      <div class="preview__data">
+                        <h4 class="preview__title">
+                        Pride and Prejudice
+                        </h4>
+                        <p class="preview__publisher">Jand Austen</p>
+                      </div>
+                    </a>
+                  </li> -->
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="row">
+            <div class="search-results">
+                <ul class="results">
+                    <!--  <li class="preview">
+              <a class="preview__link " href="#23456">
+                <figure class="preview__fig">
+                  <img src="http://books.google.com/books/content?id=kQ0mAAAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt="Test"  class="preview__img"/>
+                </figure>
+                <div class="preview__data">
+                  <h4 class="preview__title">Pride and Prejudice</h4>
+                  <p class="preview__publisher">Jane Austen</p>
+                </div>
+              </a>
+            </li> -->
+                    <!-- <div class="spinner">
+              <svg>
+                <use href="./img/icons.svg#icon-loader"></use>
+              </svg>
+            </div> -->
+                </ul>
+                <div class="pagination">
+                    <!-- <button class="btn--inline pagination__btn--prev">
+            <svg class="pagination__icon">
+              <use href="./img/icons.svg#icon-arrow-left"></use>
+            </svg>
+            <span>Page 1</span>
+            </button>
+            <button class="btn--inline pagination__btn--next">
+            <span>Page 2</span>
+            <svg class="pagination__icon">
+              <use href="./img/icons.svg#icon-arrow-right"></use>
+            </svg>
+            </button> -->
+                </div>
+            </div>
+            <div class="books">
+                  <div class="message">
+                    <div>
+                        <svg class="message__icon">
+                            <use href="./img/icons.svg#icon-smile"></use>
+                        </svg>
+                    </div>
+                    <p class="paragraph">Start by searching for a book. Have fun!</p>
+                </div>
+                <!--    <div class="error">
+            <div>
+              <svg>
+                <use href="./img/icons.svg#icon-alert-triangle"></use>
+              </svg>
+            </div>
+            <p>No book search found for your query. Please try again!</p>
+          </div> -->
+                <!-- <div class="books__card">
+            <div class="books__cardside books__cardside--front">
+              <figure class="books__fig">
+                <img src="http://books.google.com/books/content?id=kQ0mAAAAMAAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73RkgEY26taXztoJUuQ565VMTSqDBKPBj9PPG7Ohbt6KHtsiRop_7fqQH9v2rwh9dq9ay0y2_YWmMHKrKS4u4PU5lnb9Isq4yA_nDLTIBov_kliB6S47kNR_2PlEEQvl5oOE9je&source=gbs_api" alt="Book image" class="books__img" />
+              </figure>
+            </div>
+            <div class="books__cardside  books__cardside--back">
+              <div class="books__cta">
+                <div class="books__url-box">
+                  <p class="books__url-info">Here's the LInk&darr;</p>
+                </div>
+                <a href="#" class="btn btn--white books__url">Buy now!</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="books__detail">
+            <h1 class="books__title">
+            <span>Pride and Prejudice</span>
+            </h1>
+            <span class="books__info-text">Author</span>
+            <h2 class="books__info-data books__author">Jane Austen</h2>
+            <span class="books__info-text">★Rating</span>
+            <h2 class="books__info-data books__rating">4.5</h2>
+            <span class="books__info-text">Publisher</span>
+            <h2 class="books__info-data books__publisher">RD Bentley</h2>       
+            <span class="books__info-text">Publisher Date</span>
+            <h2 class="books__info-data books__date">1997</h2>     
+            <span class="books__info-text">Price</span>
+            <h2 class="books__info-data books__price">$197</h2>
+            <button class="btn-text--2 books__addcart">Add to Cart &rarr;</button>
+            <button class = "btn--round books__markicon">
+            <svg>
+              <use   href="./img/icons.svg#icon-bookmark"></use>
+            </svg>
+            </button>
+          </div> 
+
+          <div class="books__description-box">
+            <h1 class="books__title books__description-title">
+            <span>Description</span>
+            </h1>
+            <p class="books__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eum incidunt magni. Ut, rem earum tempora voluptate est pariatur veritatis it amet consectetur, adipisicing elit. Fuga nemo accusamus quaerat deserunt,
+            </p>
+          </div> -->
+                <!-- <div class="spinner">
+            <svg>
+              <use href="src/img/icons.svg#icon-loader"></use>
+            </svg>
+          </div> -->
+                <!-- <div class="error">
+            <div>
+              <svg>
+                <use href="src/img/icons.svg#icon-alert-triangle"></use>
+              </svg>
+            </div>
+            <p>No books found for your query. Please try again!</p>
+          </div> -->
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>

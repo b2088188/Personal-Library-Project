@@ -1,0 +1,140 @@
+.books {
+    flex-basis: 80rem;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-grey-light-1;
+
+    &__card {
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+        perspective: 150rem;
+        -moz-perspective: 150rem;
+        height: 52rem;
+        width: 37rem;
+        position: relative;
+
+        &side {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 52rem;
+            width: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: .3rem;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+            transition: all .8s ease;
+
+            &--back {
+                transform: rotateY(180deg);
+                background-image: linear-gradient(to right, $color-tiffany-default, $color-sky-blue);
+            }
+        }
+
+        &:hover &side--front {
+            transform: rotateY(-180deg);
+        }
+
+        &:hover &side--back {
+            transform: rotate(0);
+        }
+    }
+
+
+    &__fig {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*Books Detail*/
+    &__detail {
+        width: 37rem;
+        position: relative;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0 auto;
+        width: 37rem;
+        text-align: center;
+        color: $color-white;
+        padding: 0 2rem;
+        font-size: 3rem;
+        background-image: linear-gradient(to right, $color-tiffany-default, $color-sky-blue);
+        transform: skewX(-13deg);
+        margin-bottom: 2.5rem;
+
+        span {
+            transform: skewX(13deg);
+        }
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__url-box {
+        margin-bottom: 8rem;
+        color: $color-white;
+    }
+
+    &__url-info {
+        font-size: 4rem;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+
+    &__url {
+        width: 20rem;
+        height: 5rem;
+        border: none;
+        border-radius: 3rem;
+        text-decoration: none;
+    }
+
+    &__info-text {
+        font-size: 2.5rem;
+    }
+
+
+    &__info-data {
+        font-size: 3rem;
+        background-image: linear-gradient(to right, $color-tiffany-default, $color-sky-blue);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    &__markicon {
+        top: 12rem;
+        right: 2rem;
+        position: absolute;
+    }
+
+    &__description-box {
+        transform: translate(1rem, 5rem);
+        width: 75rem;
+        height: 70rem;
+     
+    }
+      
+
+
+    &__description {
+        font-size: 1.8rem;
+        font-weight: 400;
+
+    }
+}
